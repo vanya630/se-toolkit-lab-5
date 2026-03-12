@@ -71,5 +71,5 @@ In simple words, you should be able to say:
 3. [Dashboard front-end](./lab/tasks/required/task-3.md#dashboard-front-end)
 
 ### Optional
-dsadas
+dsadas adfdaf
 1. [Grafana dashboard](./lab/tasks/optional/task-1.md#grafana-dashboard)
