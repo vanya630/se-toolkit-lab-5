@@ -46,9 +46,21 @@ tr:nth-child(even) {
 
 .app-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .app-header h1 {
@@ -58,4 +70,124 @@ tr:nth-child(even) {
 .btn-disconnect {
   padding: 0.25rem 0.75rem;
   font-size: 0.85rem;
+}
+
+/* Navigation */
+
+.main-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.nav-button:hover {
+  background: #e0e0e0;
+}
+
+.nav-button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.nav-button.active:hover {
+  background: #0056b3;
+}
+
+/* Dashboard */
+
+.dashboard {
+  padding: 1rem 0;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+}
+
+.lab-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lab-selector select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  min-width: 150px;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.chart-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 300px;
+}
+
+.table-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-container h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.pass-rates-table {
+  width: 100%;
+}
+
+.pass-rates-table th,
+.pass-rates-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.pass-rates-table th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+.pass-rates-table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.loading,
+.error {
+  padding: 1rem;
+  text-align: center;
+}
+
+.error {
+  color: #d32f2f;
+  background: #ffebee;
+  border-radius: 4px;
 }
